@@ -1,0 +1,56 @@
+<div class= "my-container">
+  <img src="top image.png" alt="Nature">
+</div>
+<div class="heading">
+  <h2>What do you really feel like?</h2>
+  <%=form_tag("/search", method: :get) do %> 
+  <%= text_field_tag :search %>
+  <%= submit_tag 'Search', name:nil%>
+  <% end -%>
+</div>
+<div class="toprated">
+  <p><strong>TOP RATED DISHES</strong></p>
+</div>
+<% @dishes.each do |dish| %>
+  <div class="container">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="card my-card">
+        <div class="inner">
+          <img class="card-img-top"> <a href="#"><%= link_to(image_tag(dish.image.url(:original),class:"image-size"), dish_path(dish)) %></a>
+        </div>
+        <div class="rating">
+          <img src="rating.png">
+          <span>10</span>
+          <p class="vote"><b>1 VOTE</b></p>
+        </div>
+        <div class="dishcaption">
+          <strong class="card-dish"><%= dish.name %></strong>
+          <p class="card-text"><span>&#8377;</span><%= dish.price %></p>
+          <% dish.restaurants.each do |restaurant| %>
+            <h6 class="resname"><%= restaurant.name %></h6>
+        </div>
+        <div class="card-body">
+         <p><%= restaurant.address %></p>
+        </div>
+        <% end -%>
+      </div>
+    </div>
+  </div>
+<% end %>
+<div class="container-fluid">
+  <button type="button" class="btn btn-default my-btn">SEE MORE FOOD</button>
+</div>
+<footer class="footer">
+  <div class="container-fluid footer-container">
+    <div class="row footer-row">
+      <div class="col-lg-4 col-md-4 pull-right col-xs-4 phn-img">
+        <img src="phone.png" class="image">
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+        <h2 class="footer-text">Do more with the app.Download it today!</h2>
+        <p><span><img src="fooimage.png"></span><span><img src="fooimg2.png"></span></p>
+      </div>
+    </div>
+  </div>
+</footer>
+ 

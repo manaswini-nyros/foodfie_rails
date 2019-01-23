@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Foodfie</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+<script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxBIfFGmL6adUEtytF2IYA10JZjQc5_sk&callback=initMap">
+   </script>
+   <script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
+   <script src='//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js' type='text/javascript'></script> <!-- only if you need custom infoboxes -->
+  
+  </head>
+<nav class="navbar navbar-default navbar-fixed-top my-navbar">
+  <div class="row">
+    <div class="my-logo"><img src="logo.png" alt="peppa logo"></div>
+      
+  </div>
+</nav>
+  <body>
+    <%= yield %>
+  </body>
+</html>

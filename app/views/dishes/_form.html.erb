@@ -1,0 +1,6 @@
+<% form_with model: @dish, local:true do |form|%>
+<p>
+	<% select_tag("dishes_page",options_for_select([["RATING","rating"],["PRICE","price"]]),{prompt: 'SORT BY',:name=>"dishes_per_page", :class=>"Form-control select_style", id:"filter", remote:true}) %>
+</p>
+<p><% select_tag("dishes_page",options_for_select([["5+","5+"],["7+","7+"],["9+","9+"]]),{prompt: 'ALL RATINGS',:name=>"dishes_per_page", :class=>"Form-control select_style", id:"rating", remote:true}) %></p>
+<% end -%>

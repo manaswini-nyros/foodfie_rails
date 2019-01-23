@@ -1,0 +1,23 @@
+<%= dishes.find_all do |a| %>
+	<div id="search_list data_1">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hover-outr no_padding_left">
+			<figure>
+				<div class="dish_top my_card">
+					<div class="inner">
+						<img class="my-image"><a href="#"><%= link_to(image_tag(a.image.url(:original),class:"imagesize"), dish_path(a)) %></a>
+					</div>
+					<div class="rating">
+            <img src="rating.png">
+            <span>10</span>
+            <p class="vote"><b>1 VOTE</b></p>
+            <strong class="card-dish"><%= a.name %></strong>
+            <p class="card-text"><span><%= a.price %></span></p>
+          </div>
+        </div>
+			</figure>
+		</div>
+	</div>
+<% end %>
+
+
+

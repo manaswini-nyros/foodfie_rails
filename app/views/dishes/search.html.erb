@@ -1,0 +1,82 @@
+<section class="results">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no_padding_right">
+				<div class="reslt_inner">
+					<ul class="filter">
+						<li>Filter</li>
+						<li>
+							<div class="select_box sort_by">
+								<label>
+									<select id="filter">
+										<option value="">SORT BY</option>
+										<option value="rating">Rating</option>
+										<option value="price">Price</option>
+									</select>
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="select_box rating_by">
+							  <label>
+									<select id="rating">
+									  <option value="">ALL RATINGS</option>
+									  <option value="5">5+</option>
+									  <option value="7">7+</option>
+									  <option value="9">9+</option>
+								  </select>
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="select_box tag_by">
+								<label>
+									<select id="tags">
+						    <option value="">ALL DIETARY REQUIREMENTS</option>
+						    <option value="3">STARTER</option>
+						    <option value="2">MAIN</option>
+						    <option value="1">DESSERT</option>
+					    </select>
+								</label>
+							</div>
+						</li>
+					</ul>
+          <div class="range">
+		        <div class="row">
+	            <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1 no_padding_left">
+		            <p><%= @all_dishes_count %> RESULTS</p>
+	            </div>
+	            <%= form_with model: @dish, local:true do |form| %>
+	            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 no_padding_left">
+		            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 no_padding_right">
+			            <p>Rs.<span id="range_min"></span></p> 
+		            </div>
+		            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+				          <div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-draggable ui-draggable-handle">
+				  	        <div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div>
+				  	          <span class="ui-slider-handle ui-state-default ui-corner-all"></span>
+				  	          <span class="ui-slider-handle ui-state-default ui-corner-all"></span>
+				          </div>
+		            </div>
+		            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 myrupee">
+			            <p>Rs.<span id="range_max"></span></p> 
+		            </div>
+		          </div>
+	            <% end -%>
+	          </div>
+	        </div>
+	        <div id="search_list_container" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding_right">
+					  <div class="row">
+	            <div id="search_results">
+	              <%= render "dishes/list",dishes: @dishes %>
+	            </div>
+            </div>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+	  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-map">
+      <div id="map"></div>
+    </div>
+  </div>
+</section>

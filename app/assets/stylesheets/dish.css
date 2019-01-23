@@ -1,0 +1,488 @@
+body{
+	padding: 0;
+	margin: 0;
+  overflow-x: hidden;
+}
+.my-logo{
+	padding-left: 85px;
+	padding-top: 20px;
+	cursor :pointer;
+}
+.my-navbar{
+	height: 80px;
+}
+.my-container{
+	width: 100%;
+	height: 500px;
+	position:relative;
+	overflow: hidden;
+}
+.my-container > img{
+  height: 420px;
+  overflow: hidden;
+  width: 100%;
+}
+.heading{
+	color: white;
+	position: absolute;
+	top: 35%;
+	width: 100%;
+	text-align: center;
+	font-family:Liberation-serif;
+	font-size:20px;
+}
+.heading>h2{
+	font-size: 35px;
+}
+.toprated{
+	text-align: center;
+	font-family:sans-serif;
+	font-size: 12px;
+	padding-top: 20px;
+    padding-bottom:40px;
+	color: #909497;
+}
+.my-input{
+	width: 35%;
+	height: 40px;
+} 
+.image-size{
+	top: -2.92683px;
+	left: 0px;
+	width: 350px;
+	height: 356px;
+	max-width:350px;
+}
+.col-md-4{
+	float: left;
+}
+.inner{
+  overflow: hidden;
+}
+.inner img{
+	transition: all 0.5s ease;
+}
+.inner:hover img{
+	transform: scale(1.1);
+}
+.my-card{
+	position: relative;
+  margin-bottom: 2rem;
+  border: 0;
+ /* max-width: 30rem;*/
+  display: inline-block;
+  margin-right: 30px;
+ /* padding-bottom: 60px;*/
+  overflow: hidden;
+  border: 1px solid #e5e7e9;
+}
+.card-body{
+  font-size: 15px;
+  padding-bottom: 10px;
+  color: grey;
+}
+.my_card{
+position: relative;
+  margin-bottom: 2rem;
+  border: 0;
+  /*max-width: 30rem;*/
+ /* column-width: 400px;*/
+  display: inline-block;
+  margin-right: 30px;
+  padding-bottom: 60px;
+  overflow: hidden;
+  border: 1px solid #e5e7e9;
+  object-fit: cover;
+
+}
+
+.my-fluid{
+	margin-top: 40px;
+ text-align: left;
+ float: left;
+}
+/*.searched-dishes{
+float: left;
+overflow-y:scroll;
+height: 600px;
+}*/
+.rating{
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+text-align: right;
+padding: 25px 20px;
+}
+.rating img{
+	padding-top: 15px;
+}
+.rating span{
+font-size: 18px;
+font-weight: 700;
+color: #fff;
+padding-left: 5px;
+padding-right: 10px;
+display: inline-block;
+position: relative;
+}
+.rating p {
+    float: right;
+    padding-right: 10px;
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 10px;
+    color: white;
+}
+.the_slider{
+	padding: 40px;
+}
+.container{
+	text-align: center;
+	padding-left: 90px;
+}
+.dishcaption{
+	text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 190px;
+  vertical-align: bottom;
+  padding-left: 25px;
+}
+.card-dish{
+	font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  color: #fff;
+}
+.dishcaption p {
+	position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: right;
+  padding: 50px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+.dishcaption .resname{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align:left;
+  padding:50px 0px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+.footer{
+	float: left;
+  width: 100%;
+  height: auto;
+  position: relative;
+  background: #f7aa97;
+  margin-top: 90px;
+  padding: 45px 0 ;
+}
+.image{
+	position: absolute;
+	top: auto;
+	z-index: 999;
+	display: block;
+	bottom: 0;
+	right: 75px;
+
+}
+.pull-right{
+  float: right !important;
+}
+.footer-text{
+	float: right;
+  width: 100%;
+  height: auto;
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+.footer-container{
+	width: 1170px;
+	padding-left: 80px;
+	padding-right: 0px;
+}
+/*.footer-row{
+	position: relative;*/
+	/*padding-bottom: 50px;*/
+}
+/*.footer .col-lg-4{
+	position: static;
+}
+.footer .col-lg-8{
+	width: 66.66666667%;
+}*/
+.footer ul li img{
+	max-width: 100px;
+
+}
+.footer span{
+	padding-right: 20px; 
+}
+.select-box{
+	float: left;
+  width: 100%;
+  height: auto;
+}
+.results{
+	    float: left;
+	    width: 100%;
+	    height: auto;
+}
+.content-top-mrgn {
+    margin-top: 80px !important;
+}
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    }
+.no_padding_right{
+    padding-right: 0;
+}
+.filter {
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+.filter li:first-child {
+    width: 10%;
+    font-size: 12px;
+    font-weight: 700;
+    color: #83929a;
+    text-transform: uppercase;
+    padding-top: 12px;
+    margin-left: 0;
+  }
+  .filter li {
+    float: left;
+    height: auto;
+    margin: 20px 10px;
+  }
+  .filter li:nth-child(2) {
+    float: left;
+    width: 20%;
+    height: auto;
+    margin: 20px 10px;
+  }
+  .select_box {
+      float: left;
+      width: 100%;
+      height: auto;
+  }
+  .select_box label {
+    position: relative;
+      margin: 0;
+      width: 100%;
+    }
+  label{
+  	display: inline-block;
+  	max-width: 100%;
+  	margin-bottom: 5px;
+  	font-weight: bold;
+  }
+ .select_box select {
+     padding: 10px 20px;
+     margin: 0;
+     color: #83929a;
+     outline: none;
+     display: inline-block;
+    -moz-appearance: none;
+     cursor: pointer;
+     background: #fff;
+     background-position: center right;
+     border: solid 1px #d8d8d8;
+     font-size: 12px;
+     font-weight: 700;
+     text-transform: uppercase;
+     border-radius: 3px;
+   }
+   .select_box select option {
+       border: none;
+       -webkit-appearance: none;
+       box-shadow: none;
+       outline: none;
+       box-sizing: border-box;
+     }
+     .hover-outr{
+	margin-bottom: 20px;
+  padding: 0px;
+}
+.hover_outr figure {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    }
+.dish_top {
+   float: left;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .my-image{
+  position:relative;
+	width: 300px;
+	height: 300px;
+	max-width: none;
+	overflow: hidden;
+  }
+  .imagesize{
+	position:relative;
+	width: 300px;
+	height: 300px;
+	max-width: none;
+	overflow: hidden;
+}
+.col-lg-6 {
+    width: 50%;
+    float:left;
+    position: relative;
+
+  }
+#search_list_container{
+  	float: left;
+  	overflow-y:scroll;
+  	max-height: 407px;
+  	width: 100%;
+
+    }
+   .col-lg-12{
+    overflow: hidden;
+   }
+  .my-btn{
+    padding: 11px 35px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: white;
+    border-radius: 3px;
+    border: solid 1px #d8d8d8;
+    margin-left: 43%;
+    z-index: 999;
+    display: inline-block;
+    position: relative;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #83929a;
+}
+  .my-btn:hover{
+    background: #f7aa97;
+  color: white;
+}
+.range{
+      width: 100%;
+      color: #83929a;
+      font-size: 12px;
+      font-weight: 700;
+      float: left;
+      padding-left: 20px;
+     
+}
+.col-lg-10 {
+    width: 83.33333333%;
+    float: left;
+}
+.no_padding_left {
+    padding-left: 0;
+    float: left;
+}
+.col-lg-8 {
+    width: 66.66666667%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.col-lg-1{
+  float: left;
+}
+.ui-widget.ui-widget-content {
+    background: rgba(0,0,0,0.26);
+    margin-top: 10px;
+    }
+    .ui-slider {
+    position: relative;
+    text-align: left;
+  }
+  .ui-widget {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+.ui-slider-horizontal {
+    height: 3px;
+}
+.ui-slider .ui-slider-range {
+
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 0 0;
+    background: #5ac7f9;
+
+}
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+    }
+    .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 12px;
+    height: 12px;
+    cursor: default;
+    touch-action: none;
+    background: #5ac7f9;
+    border: none;
+    border-radius: 100%;
+  }
+ 
+  .ui-slider-horizontal .ui-slider-handle {
+    top: -.3em;
+    margin-left: -0.6em;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+
+    
+    font-weight: 400;
+    color: #454545;
+    }
+    .my-rupee{
+      height: 10px;
+      background-color: none;
+    }
+    #map{
+      width: 600px; 
+      height: 505px;
+     margin-top: 20px;
+      margin-left: 25px;
+      margin-right: 40px;
+    }
+    .myrupee{
+     padding-left: 10px;
+    }
